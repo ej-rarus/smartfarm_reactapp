@@ -31,10 +31,9 @@ function ControlPanel () {
         <div className="content-wrap">
             <div className='page-content'>{data.map((item, index) => (
                 <div key={index}>
-                    <h1>{item.id}</h1>
+                    <div>{item.id}</div>
                     <h1>{item.test_name}</h1>
-                    <h1>{item.test_date}</h1>
-
+                    <p>{item.test_date}</p>
                 </div>
             ))}
             </div>

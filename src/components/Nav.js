@@ -14,6 +14,7 @@ function Nav(){
             </div>
             <div className="nav-btn-container">
                 <div className="nav-btn" onClick={()=>navigate('/about')}>About</div>
+                <div className="nav-btn" onClick={()=>navigate('/controlpanel')}>Control</div>
                 <div className="nav-btn" onClick={()=>navigate('/contact')}>Contact</div>
             </div>
         </div>
