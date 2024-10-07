@@ -11,6 +11,7 @@ import ControlPanel from './pages/ControlPanel';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Diary from './pages/Diary';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/dashboard" element={<Dashboard/>} />
           <Route path="/controlpanel" element={<ControlPanel/>} />
-
+          <Route path="/diary" element={<Diary/>} />
         </Routes>
         <Footer/>
       </div>
