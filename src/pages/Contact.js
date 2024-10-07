@@ -2,9 +2,10 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>Contact us here.</p>
+    <div className='content-wrap'>
+      <h1 className='page-title'>Contact Page</h1>
+      <hr style={{border: 'none', height: '2px', backgroundColor: 'gray', width:'13rem', marginTop:"0.5rem"}}/>
+      <p className='page-content'>Contact us here.</p>
     </div>
   );
 }

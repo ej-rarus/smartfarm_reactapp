@@ -36,9 +36,48 @@
 }
 
 
-.content-wrap{
+.content-wrap {
   padding-left: 1rem;
+  padding-right: 1rem;
   margin-top: 1rem;
+}
+
+
+
+.page-content {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content:stretch;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer-content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-content{
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 @keyframes App-logo-spin {
