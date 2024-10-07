@@ -6,7 +6,7 @@ function Footer(){
 
         <div>
             <footer>
-                <div class="footer-content">푸터입니다.</div>
+                <div className="footer-content">푸터입니다.</div>
             </footer>
         </div>
 

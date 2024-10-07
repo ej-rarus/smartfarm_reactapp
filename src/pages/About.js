@@ -2,9 +2,9 @@ import React from 'react';
 
 function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>This is the About page.</p>
+    <div className='content-wrap'>
+      <h1 className='page-title'>About Page</h1>
+      <p className='page-content'>This is the About page.</p>
     </div>
   );
 }
