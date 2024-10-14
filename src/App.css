@@ -4,12 +4,135 @@
   --text-color: #333;
 }
 
+@font-face {
+  font-family: 'Paperlogy-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
 
 *{
   padding: 0;
   margin: 0;
 }
 
+
+
+
+@media (min-width: 375px) {
+  /* 작은 스마트폰 이상의 화면을 위한 스타일 */
+  .nav {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-logo-container {
+    margin: 1rem;
+  }
+  
+  .main-logo {
+    cursor: pointer;
+    font-family: Paperlogy-8ExtraBold;
+    font-size: larger;
+    font-weight: 800;
+  }
+  
+  .nav-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+
+  }
+  
+  .nav-btn {
+    display: none;
+    font-family: Paperlogy-8ExtraBold;
+    font-size: 13px;
+    margin-left: 1rem ;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .burger-menu-btn{
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+
+  .burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 10%;
+    background-color: white;
+  }
+  
+  
+  .content-wrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .page-title{
+    font-family: Paperlogy-8ExtraBold;
+  }
+  
+  .page-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .graph-container {
+    width: 40%;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .footer-content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .footer-content-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer-content{
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* 태블릿 이상의 화면을 위한 스타일 */
+}
+
+@media (min-width: 1024px) {
+  /* 작은 노트북 이상의 화면을 위한 스타일 */
+}
+
+@media (min-width: 1200px) {
+  /* 일반 데스크탑 이상의 화면을 위한 스타일 */
+  
 .nav {
   background-color: var(--primary-color);
   color: white;
@@ -26,34 +149,129 @@
 
 .main-logo {
   cursor: pointer;
+  font-family: Paperlogy-8ExtraBold;
   font-size: larger;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .nav-btn-container {
   display: flex;
-
+  justify-content: center;
+  width: 30%;
 }
 
 .nav-btn {
+  display: flex;
+  font-family: Paperlogy-8ExtraBold;
+  font-size: 13px;
   margin-left: 1rem ;
   margin-right: 1rem;
   cursor: pointer;
 
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: center;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.sidebar-btn {
+  cursor: pointer;
+  font-family: Paperlogy-8ExtraBold;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.burger-menu-btn {
+  display: none;
+}
 
 .content-wrap {
+  display: flex;
+  flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 1rem;
 }
 
-
+.page-title{
+  font-family: Paperlogy-8ExtraBold;
+}
 
 .page-content {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.post-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.post-frame {
+  font-weight: bold;
+  text-align: center;
+}
+
+.post-list-row {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-id {
+  width: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+
+}
+
+.post-title {
+  width: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.post-author {
+  width: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+
+}
+
+.post-create-date {
+  width: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+
+}
+
+.post-hr {
+  size: 1px;
+
 }
 
 .graph-container {
@@ -88,6 +306,23 @@ footer {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
 }
+.graph-container{
+  width: 100%;
+}
+
+.std-btn{
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+}
+
+
 
 @keyframes App-logo-spin {
   from {

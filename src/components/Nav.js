@@ -18,6 +18,8 @@ function Nav(){
                 <div className="nav-btn" onClick={()=>navigate('/controlpanel')}>Control</div>
                 <div className="nav-btn" onClick={()=>navigate('/diary')}>Diary</div>
                 <div className="nav-btn" onClick={()=>navigate('/contact')}>Contact</div>
+
+                <div className="burger-menu-btn" ></div>
             </div>
         </div>
 
