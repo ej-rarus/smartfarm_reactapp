@@ -47,11 +47,11 @@ function Diary(){
                     <div className="post-create-date">작성일자</div> 
                 </div>
 
-                {data.map((item, index) => {
+                {data.map((item) => {
                     const formattedDate = new Date(item.create_date).toLocaleDateString("en-CA");
                     return(
                         <div>
-                            <div className="post-list-row" key={index}>
+                            <div className="post-list-row" key={item}>
                                 <div className="post-id">{item.post_id}</div>
                                 <div className="post-title" onClick={()=>navigate(`/diary/${item.post_id}`)}>{item.post_title}</div>
                                 <div className="post-author">{item.author}</div>
