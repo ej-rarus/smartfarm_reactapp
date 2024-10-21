@@ -75,10 +75,17 @@
   }
   
   .sidebar-container {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   
   .sidebar-btn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -272,7 +279,7 @@
   color: black;
 }
 
-.burger-menu-btn {
+#burger-menu-btn {
   display: none;
 }
 

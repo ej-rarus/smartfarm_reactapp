@@ -1,13 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import '../App.css';
 
 
-function Nav(){
+
+function Nav({ menuVisible, setMenuVisible }){
     const navigate = useNavigate();
 
-    return(
+    
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible); // 상태를 토글
+    };
 
+    return(
         <div className="nav">
             <div className="main-logo-container">
                 <div className="main-logo" onClick={()=>navigate('/')}>SF-Mark1</div>
@@ -19,10 +25,12 @@ function Nav(){
                 <div className="nav-btn" onClick={()=>navigate('/diary')}>Diary</div>
                 <div className="nav-btn" onClick={()=>navigate('/contact')}>Contact</div>
 
-                <div id="burger-menu-btn" onClick={()=>{}} >=</div>
+                <div id="burger-menu-btn" 
+                     onClick={toggleMenu}>
+                    버거
+                </div>
             </div>
         </div>
-
     );
 }
 

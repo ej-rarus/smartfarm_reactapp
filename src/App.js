@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes,} from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -17,14 +17,16 @@ import DiaryNewPost from './pages/DiaryNewPost';
 import Sidebar from './components/Sidebar';
 
 function App() {
+  const [menuVisible, setMenuVisible] = useState(false); // menuVisible 상태 관리
+
   return (
     <Router>
       <div>
         <div className='header'>
-          <Nav/>
+          <Nav menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
         </div>
         <div className='main'>
-          <Sidebar/>
+          <Sidebar menuVisible={menuVisible} />
           <Routes>
             {/* 각 페이지로의 라우트 설정 */}
             <Route exact path="/" element={<Home/>} />
