@@ -40,24 +40,18 @@ function Diary(){
             </button>
 
             <div className="post-list-container">
-                <div className="post-list-row post-frame">
-                    <div className="post-id">번호</div>
-                    <div className="post-title">제목</div>
-                    <div className="post-author">글쓴이</div>
-                    <div className="post-create-date">작성일자</div> 
-                </div>
+                
 
                 {data.map((item) => {
                     const formattedDate = new Date(item.create_date).toLocaleDateString("en-CA");
                     return(
                         <div>
-                            <div className="post-list-row" key={item}>
+                            <div className="post-list-row" key={item} onClick={()=>navigate(`/diary/${item.post_id}`)}>
                                 <div className="post-id">{item.post_id}</div>
-                                <div className="post-title" onClick={()=>navigate(`/diary/${item.post_id}`)}>{item.post_title}</div>
+                                <div className="post-title" >{item.post_title}</div>
                                 <div className="post-author">{item.author}</div>
                                 <div className="post-create-date">{formattedDate}</div>  
                             </div>
-                            <hr></hr>
                         </div>
                     );
 

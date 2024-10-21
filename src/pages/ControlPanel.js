@@ -29,13 +29,11 @@ function ControlPanel () {
 
     return (
         <div className="content-wrap">
-            <div className='page-content'>{data.map((item, index) => (
-                <div key={index}>
-                    <div>{item.id}</div>
-                    <h1>{item.test_name}</h1>
-                    <p>{item.test_date}</p>
-                </div>
-            ))}
+            <h1 className='page-title'>제어패널</h1>
+            <hr style={{border: 'none', height: '2px', backgroundColor: 'gray', width:'13rem', marginTop:"0.5rem"}}/>
+            <div id='control-panel'>
+                <div className=''></div>
+
             </div>
         </div>
     );
