@@ -4,11 +4,10 @@ import { useState } from "react";
 import '../App.css';
 
 
-
 function Nav({ menuVisible, setMenuVisible }){
     const navigate = useNavigate();
 
-    
+
     const toggleMenu = () => {
         setMenuVisible(!menuVisible); // 상태를 토글
     };
@@ -27,7 +26,6 @@ function Nav({ menuVisible, setMenuVisible }){
 
                 <div id="burger-menu-btn" 
                      onClick={toggleMenu}>
-                    버거
                 </div>
             </div>
         </div>

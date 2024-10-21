@@ -12,7 +12,6 @@ function Sidebar({menuVisible}){
             <div className="sidebar-btn" onClick={()=>navigate('/controlpanel')}>Control</div>
             <div className="sidebar-btn" onClick={()=>navigate('/diary')}>Diary</div>
             <div className="sidebar-btn" onClick={()=>navigate('/contact')}>Contact</div>
-
         </div>
     );
 }
