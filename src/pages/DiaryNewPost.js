@@ -74,9 +74,10 @@ function DiaryNewPost() {
             <option value="0005">기타</option>
           </select>
         </div>
-        <button className="std-btn" type="submit">작성</button>
-        <button className="std-btn" type="cancel">취소</button>
-
+        <div className="std-form-container">
+          <button className="std-btn" type="submit">작성</button>
+          <button className="std-btn" type="cancel">취소</button>
+        </div>
       </form>
     </div>
   );
