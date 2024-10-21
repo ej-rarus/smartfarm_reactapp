@@ -6,7 +6,7 @@ function Sidebar({menuVisible}){
     const navigate = useNavigate();
 
     return(
-        <div className="sidebar-container"  style={{display: menuVisible ? 'flex' : 'none'}}>
+        <div id="sidebar-container"  style={{display: menuVisible ? 'flex' : 'none'}}>
             <div className="sidebar-btn" onClick={()=>navigate('/about')}>About</div>
             <div className="sidebar-btn" onClick={()=>navigate('/dashboard')}>Dashboard</div>
             <div className="sidebar-btn" onClick={()=>navigate('/controlpanel')}>Control</div>

@@ -74,12 +74,13 @@
 
   }
   
-  .sidebar-container {
-    display: flex;
+  #sidebar-container {
+    display: none;
     flex-direction: column;
     background-color: var(--primary-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    transition: transform 0.2s ease;
   }
   
   .sidebar-btn {
@@ -258,7 +259,7 @@
   flex-direction: row;
 }
 
-.sidebar-container {
+#sidebar-container {
   display: flex;
   flex-direction: column;
   width: 10%;
