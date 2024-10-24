@@ -1,6 +1,8 @@
 import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes,} from 'react-router-dom';
+import { motion } from "framer-motion"
+
 
 import Home from './pages/Home';
 import About from './pages/About';
