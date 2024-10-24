@@ -7,13 +7,14 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Dashboard from './pages/Dashboard';
 import ControlPanel from './pages/ControlPanel';
+import Diary from './pages/Diary';
+import DiaryPost from './components/DiaryPost';
+import DiaryNewPost from './pages/DiaryNewPost';
+import DiaryEditPost from './pages/DiaryEditPost';
 
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import Diary from './pages/Diary';
-import DiaryPost from './components/DiaryPost';
-import DiaryNewPost from './pages/DiaryNewPost';
 import Sidebar from './components/Sidebar';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Nav menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
         </div>
         <div className='main'>
-          <Sidebar menuVisible={menuVisible} />
+          <Sidebar menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
           <Routes>
             {/* 각 페이지로의 라우트 설정 */}
             <Route exact path="/" element={<Home/>} />
@@ -37,7 +38,7 @@ function App() {
             <Route path="/diary" element={<Diary/>} />
             <Route path="/diary/:id" element={<DiaryPost />} /> {/* 동적 라우트 */}
             <Route path="/diary/new" element={<DiaryNewPost />} /> {/* 글쓰기 경로 추가 */}
-
+            <Route path="/diary/edit/:id" element = {<DiaryEditPost/>} />
           </Routes>
         </div>
         <Footer/>

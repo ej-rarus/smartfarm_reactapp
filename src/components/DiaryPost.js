@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+
+
 
 function DiaryPost() {
   const { id } = useParams(); // URL에서 게시글 ID를 가져옴
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
+  const handleEdit = () => {
+    navigate(`/diary/edit/${id}`);
+  }
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -32,6 +38,7 @@ function DiaryPost() {
       <p>글쓴이: {post.author}</p>
       <p>작성일자: {new Date(post.create_date).toLocaleDateString("en-CA")}</p>
       <div>{post.post_content}</div> {/* 게시글의 내용 */}
+      <button onClick={handleEdit}>수정</button>
     </div>
   );
 }
