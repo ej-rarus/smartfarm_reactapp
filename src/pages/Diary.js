@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import AnimatedComponent from "../components/AnimatedComponent";
+
 
 function Diary() {
   const [data, setData] = useState([]);
